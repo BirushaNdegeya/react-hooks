@@ -4,3 +4,17 @@
    box-sizing: border-box;
    font-family: Helvetica, sans-serif;
 }
+
+button {
+   display: block;
+   height: 40px;
+   border-radius: 16px;
+   padding-left: 24px;
+   padding-right: 24px;
+   font: inherit;
+   background-color: navy;
+   color: #fff;
+   margin-top: 5px;
+   border: 0px;
+   cursor: pointer;
+}

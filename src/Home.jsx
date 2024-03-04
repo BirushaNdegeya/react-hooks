@@ -10,6 +10,15 @@ export const Component = () => {
       console.log(inputRef.current.value);
    };
 
+   useEffect(() => {
+      inputRef.current.focus()
+   }, []);
+
+   const handleCount = () => {
+      countRef.current = countRef.current + 1;
+      console.log(`Count: ${countRef.count}`)
+   }
+
    return (
       <>
          <h1>UseRef</h1>
@@ -20,6 +29,7 @@ export const Component = () => {
             ref={inputRef}
          />
          <button onClick={handleClick}>Input Value</button>
+         <button onClick={handleCount}>Hanle Count</button>
       </>
    )
 }

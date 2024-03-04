@@ -4,11 +4,22 @@ import { api } from "./api/api";
 export const Component = () => {
 
    const inputRef = useRef(null);
-   console.log(inputRef);
+   const countRef = useRef(0);
+
+   const handleClick = () => {
+      console.log(inputRef.current.value);
+   };
 
    return (
       <>
          <h1>UseRef</h1>
+
+         <p>Count: {countRef.current}</p>
+         <input
+            type="text"
+            ref={inputRef}
+         />
+         <button onClick={handleClick}>Input Value</button>
       </>
    )
 }

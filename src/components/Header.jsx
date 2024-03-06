@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
    return (
       <nav>
-         <Link>Home Screen</Link>
-         <Link>Profile Screen</Link>
-         <Link>Setting Screen</Link>
+         <Link to="/">Home Screen</Link>
+         <Link to="profile">Profile Screen</Link>
+         <Link to="setting">Setting Screen</Link>
       </nav>
    );
 };

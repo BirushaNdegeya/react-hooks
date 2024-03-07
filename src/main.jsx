@@ -3,6 +3,7 @@ import ReactDOMClient from 'react-dom/client';
 import Home from "./pages/Home";
 import Service from "./pages/Service";
 import About from "./pages/About";
+import DemoUseRef from "./demo/DemoUseRef";
 import { 
    BrowserRouter as Router,  
    Routes,
@@ -33,7 +34,7 @@ const App = () => {
 const root = ReactDOMClient.createRoot(document.getElementById('root'));
 root.render(
    <StrictMode>
-      <App />
+      <DemoUseRef />
    </StrictMode>
 );
 // pnpm -> have this in your local node
